@@ -1,0 +1,36 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Prog718
+{
+	public static void main(String[] args)
+	{
+		Frame718 f = new Frame718();
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setVisible(true);
+	}
+}
+
+class Frame718 extends JFrame
+{
+	public Frame718()
+	{
+		setTitle("zzz 718");
+		setSize(300, 200);
+		setLocation(100, 200);
+
+		Panel718 panel = new Panel718();
+		Container cp = getContentPane();
+		cp.add(panel);
+
+	}
+}
+
+class Panel718 extends JPanel
+{
+	public void paintComponent(Graphics g)
+	{
+		super.paintComponent(g);
+		g.drawString("Hi", 75, 100);		
+	}
+}
